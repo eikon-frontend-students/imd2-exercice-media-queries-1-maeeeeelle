@@ -6,6 +6,8 @@
 
 body {
   padding: 20px;
+  font-family: inter;
+  text-align: center;
 }
 
 a {
@@ -15,4 +17,96 @@ a {
 img,
 video {
   display: block;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Hammersmith One";
+  font-weight: 400;
+}
+
+.description-title {
+  font-size: 20px;
+}
+
+.description-content {
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.news-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.download-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.mobile {
+  font-size: 14px;
+}
+
+.desktop {
+  font-size: 14px;
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .download-title{
+    font-size: 28px;
+  }
+  .logos {
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .desktop {
+    display: none;
+  }
+  .description-title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 992px) {
+  .download-title{
+    font-size: 36px;
+  }
+  .description-title {
+    text-align: left;
+    font-size: 36px;
+  }
+  .description-content {
+    font-size: 20px;
+    text-align: left;
+  }
+  .logos {
+    justify-content: start;
+    gap: 30px;
+
+    img {
+      width: 100px ;
+    }
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: contents;
+  }
 }
